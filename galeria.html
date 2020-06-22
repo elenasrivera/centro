@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="author" content="elenasaco">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link type="text/css" rel="stylesheet" href="estiloscss.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script type="text/javascript" src="scripts/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="scripts/centro.js"></script>
+    <script type="text/javascript" src="scripts/funciones.js"></script>
+
+    <script>
+        function cambiar() {
+            var videoprincipal = document.getElementById("videoprincipal");
+            var nsrc = this.src;
+            videoprincipal.removeAttribute("src");
+            videoprincipal.setAttribute("src", nsrc);
+            videoprincipal.setAttribute("autoplay", "autoplay");
+        }
+
+    </script>
+    <title>Centro de Estudios Elena</title>
+</head>
+
+<body>
+
+    <!-- CABECERA -->
+    <div class="header">
+        <!-- LOGO -->
+        <img src="images/logodiwn_peq.png" id="logo">
+        <!-- DIRECCION -->
+        <div class="direccion">
+            <p>Centro de Estudios Elena</p>
+            <p>C/Veiga de Abaixo,36</p>
+            <p>32792 A DERRASA</p>
+            <p><i class="fa-phone-square">988354789</i></p>
+            <p><i class="fa-envelope">elena.centro_estudios@elena.com</i></p>
+        </div>
+        <!-- NAVEGACION -->
+        <nav>
+            <ul id="primerosEnlaces">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="php/index.php">Matricúlate</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropdown-btn">Nuestros cursos</button>
+                        <div class="dropdown-content">
+                            <a href="ofertaeducativa.html">Infantil</a>
+                            <a href="ofertaeducativa.html">Primaria</a>
+                            <a href="ofertaeducativa.html">Secundaria</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#" alt="Enlace a la galería de imágenes de actividades del centro">Galería</a></li>
+                <li> <a href="encuentranos.html" alt="Enlace al mapa de situación del centro">Encuéntranos</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="galeria">
+        <!-- CARRUSEL FOTOS -->
+        <div class="w3-content w3-display-container w3-mobile">
+            <div class="carrusel">
+                <figure>
+                    <picture class="mySlides">
+                        <source srcset="images/colegio-xl.jpg" media="(min-width:1200px)">
+                        <source srcset="images/colegio.jpg" media="(min-width:577px) and (max-width:1199px)">
+                        <source srrcset="images/colegio-peq" media="(max-width:576px)">
+                        <img src="images/colegio.jpg" alt="Imagen del centro">
+                    </picture>
+                    <picture class="mySlides">
+                        <source srcset="images/infantil_escaleras-xl.jpg" media="(min-width:1200px)">
+                        <source srcset="images/infantil_escaleras.jpg" media="(min-width:577px) and (max-width:1999px)">
+                        <source srrcset="images/infantil_escaleras-s.jpg" media="(max-width:576px)">
+                        <img src="images/infantil_escaleras.jpg" alt="Alumnos de infantil bajando unas escaleras">
+                    </picture>
+                    <picture class="mySlides">
+                        <source srcset="images/aulaprimaria-l.jpg" media="(min-width:1200px)">
+                        <source srcset="images/aulaprimaria.jpg" media="(min-width:577px) and (max-width:1999px)">
+                        <source srrcset="images/aulaprimaria-s.jpg" media="(max-width:576px)">
+                        <img src="images/aulaprimaria.jpg" alt="alumnos de primaria en el aula">
+                    </picture>
+                    <picture class="mySlides">
+                        <source srcset="images/alumnossecundaria-xl.jpg" media="(min-width:1200px)">
+                        <source srcset="images/alumnossecundaria-l.jpg" media="(min-width:577px) and (max-width:1999px)">
+                        <source srrcset="images/alumnossecundaria-s.jpg" media="(max-width:576px)">
+                        <img src="images/alumnossecundaria.jpg" alt="Alumnos de secundaria en su aula">
+                    </picture>
+                    <picture class="mySlides">
+                        <source srcset="images/biblioteca-xl.jpg" media="(min-width:1200px)">
+                        <source srcset="images/biblioteca.jpg" media="(min-width:577px) and (max-width:1999px)">
+                        <source srrcset="images/biblioteca-s.jpg" media="(max-width:576px)">
+                        <img src="images/biblioteca.jpg" alt="Imagen de la biblioteca">
+                    </picture>
+                    <picture class="mySlides">
+                        <source srcset="images/cuentacuentos-xl.jpg" media="(min-width:1200px)">
+                        <source srcset="images/cuentacuentos.jpg" media="(min-width:577px) and (max-width:1999px)">
+                        <source srrcset="images/cuentacuentos-s.jpg" media="(max-width:576px)">
+                        <img src="images/cuentacuentos.jpg" alt="Imagen de los alumnos escuchando un cuentacuentos">
+                    </picture>
+                    <picture class="mySlides">
+                        <source srcset="images/patio2-xl.png" media="(min-width:1200px)">
+                        <source srcset="images/patio2.png" media="(min-width:577px) and (max-width:1999px)">
+                        <source srrcset="images/patio2-s.png" media="(max-width:576px)">
+                        <img src="images/patio2.png" alt="Imagen del patio">
+                    </picture>
+                    <picture class="mySlides">
+                        <source srcset="images/futbol-xl.jpg" media="(min-width:1200px)">
+                        <source srcset="images/futbol.jpg" media="(min-width:577px) and (max-width:1999px)">
+                        <source srrcset="images/futbol-s.jpg" media="(max-width:576px)">
+                        <img src="images/futbol.jpg" alt="Imagen del equipo de fútbol">
+                    </picture>
+                    <picture class="mySlides">
+                        <source srcset="images/comedor-xl.jpg" media="(min-width:1200px)">
+                        <source srcset="images/comedor.jpg" media="(min-width:577px) and (max-width:1999px)">
+                        <source srrcset="images/comedor-s.jpg" media="(max-width:576px)">
+                        <img src="images/comedor.jpg" alt="Imagen del comedor">
+                    </picture>
+                    <picture class="mySlides">
+                        <source srcset="images/angrybirds-xl.jpg" media="(min-width:1200px)">
+                        <source srcset="images/angrybirds.jpg" media="(min-width:577px) and (max-width:1999px)">
+                        <source srrcset="images/angrybirds-s.jpg" media="(max-width:576px)">
+                        <img src="images/angrybirds.jpg" alt="Alumnos disfrazados de angrybirds">
+                    </picture>
+                    <picture class="mySlides">
+                        <source srcset="images/patio-xl.jpg" media="(min-width:1200px)">
+                        <source srcset="images/patio.jpg" media="(min-width:577px) and (max-width:1999px)">
+                        <source srrcset="images/patio-s.jpg" media="(max-width:576px)">
+                        <img src="images/patio.jpg" alt="Imagen del patio de infantil">
+                    </picture>
+                    <picture class="mySlides">
+                        <source srcset="images/estudio-xl.jpg" media="(min-width:1200px)">
+                        <source srcset="images/estudio.jpg" media="(min-width:577px) and (max-width:1999px)">
+                        <source srrcset="images/estudio-s.jpg" media="(max-width:576px)">
+                        <img src="images/estudio.jpg" alt="Alumnos estudiando">
+                    </picture>
+                    <picture class="mySlides">
+                        <source srcset="images/juegospatio-xl.jpg" media="(min-width:1200px)">
+                        <source srcset="images/juegospatio.jpg" media="(min-width:577px) and (max-width:1999px)">
+                        <source srrcset="images/juegospatio-s.jpg" media="(max-width:576px)">
+                        <img src="images/juegospatio.jpg" alt="Alumnos jugando en el patio">
+                    </picture>
+                    <picture class="mySlides">
+                        <source srcset="images/diapaz-xl.jpg" media="(min-width:1200px)">
+                        <source srcset="images/diapaz.jpg" media="(min-width:577px) and (max-width:1999px)">
+                        <source srrcset="images/diapaz-s.jpg" media="(max-width:576px)">
+                        <img src="images/diapaz.jpg" alt="Alumnos celebrando en día de la paz">
+                    </picture>
+                    <picture class="mySlides">
+                        <source srcset="images/laboratorio-xl.jpg" media="(min-width:1200px)">
+                        <source srcset="images/laboratorio.jpg" media="(min-width:577px) and (max-width:1999px)">
+                        <source srrcset="images/laboratorio-s.jpg" media="(max-width:576px)">
+                        <img src="images/laboratorio.jpg" alt="Alumnos en el laboratorio">
+                    </picture>
+                </figure>
+
+            </div>
+
+        </div>
+        <!-- VÍDEOS -->
+        <div class="videos">
+            <div id="video">
+                <video id="videoprincipal" src="videos/romper_estereotipos.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="Romper estereotipos" allowfullscreen controls>
+                </video>
+            </div>
+
+            <div class="aside">
+                <div class="titulo">
+                    <h2>otros vídeos de interés</h2>
+                </div>
+
+                <div id="v1">
+                    <video class="videos-aside" width="225em" height="149em" src="videos/fotosintesis.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" alt="Video explicativo de la fotosíntesis" title="La fotosíntesis" allowfullscreen controls>
+                    </video>
+                </div>
+                <div id="v2">
+                    <video class="videos-aside" width="225em" height="149em" src="videos/sistema-circulatorio.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" alt="Vídeo explicativo del sistema circulatorio" title="El sistema circulatorio" allowfullscreen controls>
+                    </video>
+                </div>
+                <div id="v3">
+                    <video class="videos-aside" width="225em" height="149em" src="videos/poder-transformador-de-la-educacion.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" alt="Vídeo sobre el poder transformador de la educación" title="El poder transformador de la educación" allowfullscreen controls>
+                    </video>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="horario">
+            <div>
+                <h2>Horario</h2>
+            </div>
+            <div>
+                <strong>Lunes a Viernes</strong>
+                <p>7:00 AM - 9:00 PM</p>
+            </div>
+            <div>
+                <strong>Sábado - domingo</strong>
+                <p>Cerrado</p>
+            </div>
+        </div>
+        <div class="rr-ss">
+            <ul>
+                <li><i class="fa-facebook-square"><a href="#"></a></i></li>
+                <li><i class="fa-twiter"><a href="#"></a></i></li>
+                <li><i class="fa-instagram"><a href="#"></a></i></li>
+                <li><i class="fa-google"><a href="#"></a></i></li>
+            </ul>
+        </div>
+        <div class="autor">
+            <p><br>Copyright &copy; 2020 elena saco
+
+                <br>Diseño: <a rel="nofollow" href="#" target="_parent">Elena Saco</a></p>
+        </div>
+    </div>
+
+</body>
+
+</html>
